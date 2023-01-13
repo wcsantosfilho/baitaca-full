@@ -1,0 +1,48 @@
+{
+  "name": "baitaca-backend",
+  "version": "1.0.0",
+  "description": "backend da baitaca",
+  "type": "module",
+  "main": "src/loader.js",
+  "scripts": {
+    "dropTestDB": "mongo BDscripts/dropBDTeste.js",
+    "test": "export NODE_ENV=test && mocha --delay --exit ./tests/**/*.js",
+    "dev": "export NODE_ENV=development && nodemon --watch src/loader.js",
+    "debug": "export NODE_ENV=development && nodemon --watch --inspect src/loader.js",
+    "production": "export NODE_ENV=production && pm2 start src/loader.js --name rachagasosa-backend",
+    "start": "pm2 start src/loader.js --name rachagasosa-backend"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^3.2.4",
+    "body-parser": "^1.19.0",
+    "cheerio": "^1.0.0-rc.9",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-query-int": "^3.0.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.19",
+    "mocha": "^8.2.1",
+    "mongoose": "^5.10.13",
+    "mongoose-paginate": "^5.0.3",
+    "node-fetch": "2.0",
+    "node-schedule": "^2.0.0",
+    "puppeteer": "^9.1.1",
+    "tap-spec": "^2.2.2",
+    "tape": "^4.13.3",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "nodemon": "^2.0.6",
+    "pm2": "^5.1.2",
+    "supertest": "^6.0.1"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
