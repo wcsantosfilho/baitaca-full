@@ -6,7 +6,7 @@ import logging from './logging.js'
 dotenv.config({silent: true})
 
 var config = {};
-config.environment = process.env.NODE_ENV.trim()
+config.environment = process.env.NODE_ENV
 config.cronVar = process.env.CRON_VAR
 config.environment = process.env.NODE_ENV
 config.sendgridApiKey = process.env.SENDGRID_API_KEY
