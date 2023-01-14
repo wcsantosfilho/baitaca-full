@@ -5,12 +5,11 @@
   "type": "module",
   "main": "src/loader.js",
   "scripts": {
-    "dropTestDB": "mongo BDscripts/dropBDTeste.js",
     "test": "export NODE_ENV=test && mocha --delay --exit ./tests/**/*.js",
     "dev": "export NODE_ENV=development && nodemon --watch src/loader.js",
     "debug": "export NODE_ENV=development && nodemon --watch --inspect src/loader.js",
     "production": "export NODE_ENV=production && pm2 start src/loader.js --name rachagasosa-backend",
-    "start": "pm2 start src/loader.js --name rachagasosa-backend"
+    "start": "pm2 start src/loader.js --name baitaca-backend"
   },
   "author": "",
   "license": "ISC",
@@ -31,6 +30,7 @@
     "mongoose-paginate": "^5.0.3",
     "node-fetch": "2.0",
     "node-schedule": "^2.0.0",
+    "pm2": "^5.2.2",
     "puppeteer": "^9.1.1",
     "tap-spec": "^2.2.2",
     "tape": "^4.13.3",
@@ -39,7 +39,6 @@
   "devDependencies": {
     "chai": "^4.3.4",
     "nodemon": "^2.0.6",
-    "pm2": "^5.1.2",
     "supertest": "^6.0.1"
   },
   "engines": {
