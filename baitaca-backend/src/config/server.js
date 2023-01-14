@@ -12,6 +12,7 @@ import wordsRouter from '../api/words.js';
 import indexRouter from '../api/index.js';
 import catalogRouter from '../api/catalog.js';
 
+console.log(`${config.backendPORT} | ${process.env.PORT}`)
 const PORT = config.backendPORT || 5000;
 const server = express();
 
