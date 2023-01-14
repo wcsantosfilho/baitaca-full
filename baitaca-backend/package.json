@@ -6,10 +6,9 @@
   "main": "src/loader.js",
   "scripts": {
     "test": "export NODE_ENV=test && mocha --delay --exit ./tests/**/*.js",
-    "dev": "export NODE_ENV=development && nodemon --watch src/loader.js",
+    "dev": "export NODE_ENV=development && node src/loader.js",
     "debug": "export NODE_ENV=development && nodemon --watch --inspect src/loader.js",
-    "production": "export NODE_ENV=production && pm2 start src/loader.js --name rachagasosa-backend",
-    "start": "pm2 start src/loader.js --name baitaca-backend"
+    "start": "node src/loader.js"
   },
   "author": "",
   "license": "ISC",
