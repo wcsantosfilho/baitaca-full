@@ -34,8 +34,8 @@ server.use((req, res, next) => {
 // error handler
 server.use((err, req, res, next) => {
     // set locals, only providing error in development
-    res.locals.message = err.message;
-    res.locals.error = config.environment == "development" ? err : {};
+    // res.locals.message = err.message;
+    // res.locals.error = config.environment == "development" ? err : {};
 
     // respond with the error page
     logging.error(`bad error: ${err}`);
