@@ -22,8 +22,8 @@ server.use(cors());
 server.use(queryParser());
 server.use(cookieParser());
 server.use('/api', indexRouter);
-server.use('/word', wordsRouter);
-server.use('/catalog', catalogRouter);
+server.use('/api/word', wordsRouter);
+server.use('/api/catalog', catalogRouter);
 
 // catch 404 and forward error handler
 server.use((req, res, next) => {
