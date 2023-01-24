@@ -27,6 +27,7 @@ server.use('/catalog', catalogRouter);
 
 // catch 404 and forward error handler
 server.use((req, res, next) => {
+    logging.info(`Catched by 404 of server.use`);
     next(createError(404));
 })
 
