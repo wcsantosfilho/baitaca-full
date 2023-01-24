@@ -21,7 +21,7 @@ server.use(bodyParser.json());
 server.use(cors());
 server.use(queryParser());
 server.use(cookieParser());
-server.use('/', indexRouter);
+server.use('/api', indexRouter);
 server.use('/word', wordsRouter);
 server.use('/catalog', catalogRouter);
 
