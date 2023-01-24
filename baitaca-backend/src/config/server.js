@@ -38,7 +38,7 @@ server.use((err, req, res, next) => {
 
     // respond with the error page
     logging.error(`bad error: ${err}`);
-    res.status(err.status || 500).json({ msg: 'Um erro grave aconteceu. Contate o suporte'});
+    res.status(err.status || 500).json({ msg: 'Um erro gravíssimo aconteceu. Contate o suporte'});
 });
 
 
