@@ -5,7 +5,7 @@ import FormSearch from './formSearch.js'
 import DataArea from './dataArea.js';
 
 const workingArea = () => {
-  const [activeSearch, setactiveSearch] = useState([{ word: "xurupita"}, { word: "jamelão"}, { word: "camelo"}]);
+  const [activeSearch, setactiveSearch] = useState([]);
 
   const handleFormSearchChange = (value) => {
     console.log(process.env.NODE_ENV, process.env.REACT_APP_API_URL);
