@@ -111,9 +111,10 @@ const wordDetail = (req, res, next) => {
     const findResult = Word.findById(req.params.id)
         .exec((err, findResult) => {
             if (err) {
-                logging.info(`[wordDetail] status:200 id:${req.params.id}`);
+                logging.error(`[wordDetail] id:${req.params.id}`);
                 return next(err);
             } else {
+                logging.info(`[wordDetail] status:200 id:${req.params.id}`);
                 logging.info(`json:${JSON.stringify(findResult)}`);
                 res.status(200).json(findResult);
             }
