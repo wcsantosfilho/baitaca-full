@@ -12,7 +12,7 @@ import wordsRouter from '../api/words.js';
 import indexRouter from '../api/index.js';
 import catalogRouter from '../api/catalog.js';
 
-console.log(`${config.backendPORT} | ${config.environment}`)
+logging.info(`${config.backendPORT} | ${config.environment}`)
 const PORT = config.backendPORT || 5000;
 const server = express();
 
@@ -50,6 +50,6 @@ server.listen(PORT, () => {
     logging.info('^^ server start ^^');
 })
 
-server.on( 'close', () => console.log('Closing') );
+server.on( 'close', () => logging.log('Closing') );
 
 export default server;

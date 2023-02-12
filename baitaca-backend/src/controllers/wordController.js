@@ -1,8 +1,9 @@
 import Word from '../models/word.js';
 import logging from '../config/logging.js';
 
-const index = (req, res) => {
-    res.send('[wordcontroller] Not implemented: index');
+
+const index = (req, res, next) => {
+    res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
 const wordList = async (req, res, next) => {

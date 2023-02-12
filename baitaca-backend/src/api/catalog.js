@@ -1,12 +1,13 @@
 import express from 'express';
 import wordController from '../controllers/wordController.js';
+import verifyToken from '../authentication/verifyToken.js';
 
 const router = express.Router();
 
 // word routes
 
 // GET word Index
-router.get('/', wordController.index);
+router.get('/', verifyToken, wordController.index);
 
 // GET word List
 router.get('/word/list', wordController.wordList);

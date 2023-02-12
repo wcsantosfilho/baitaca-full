@@ -8,7 +8,6 @@ const workingArea = () => {
   const [activeSearch, setactiveSearch] = useState([]);
 
   const handleFormSearchChange = (value) => {
-    console.log(process.env.NODE_ENV, process.env.REACT_APP_API_URL);
     let urlBase = process.env.REACT_APP_API_URL;
     let uri = urlBase + value.numberOfLetters + '/' + value.initial + '/numberOfLettersAndInitial'
     axios.get(uri)
@@ -16,7 +15,6 @@ const workingArea = () => {
         setactiveSearch(response.data);
     })
     .catch((err) => {
-        console.log('response.status: ',err.response.status)
         let httpStatus = err.response.status;
         switch (httpStatus) {
           case 500:
