@@ -8,8 +8,7 @@ function verifyToken(req, res, next) {
     jwt.verify(token, config.backendApiSalt, function(err, decoded) {
     if (err) return res.status(500).json({ auth: false, message: 'Failed to authenticate token.' });
     // if everything good, save to request for use in other routes
-    console.dir(decoded);
-    req.userId = decoded.id;
+    req.userId = decoded.applications;
     next();
   });
 }
