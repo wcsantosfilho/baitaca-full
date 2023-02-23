@@ -22,6 +22,6 @@ router.get('/word/:number/numberOfLetters', verifyToken, wordController.wordList
 router.get('/word/:number/:letter/numberOfLettersAndInitial', verifyToken, wordController.wordListByNumberOfLettersAndInitial);
 
 // GET Word Detailt
-router.get('/word/:id/detail', verifyToken, wordController.wordDetail);
+router.get('/word/:id/detail', wordController.wordDetail);
 
 export default router;

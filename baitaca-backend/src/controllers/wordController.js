@@ -3,8 +3,10 @@ import logging from '../config/logging.js';
 
 
 const index = (req, res, next) => {
-    let origin = req.get('origin');
-    logging.info(`[wordcontroller]/index origin: ${origin} `); 
+    var origin = req.get('origin');
+    var host2 = req.headers.host;
+    var origin2 = req.headers.origin;
+    logging.info(`[wordcontroller]/index origin: ${origin} | ${host2} | ${origin2} `); 
     res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
