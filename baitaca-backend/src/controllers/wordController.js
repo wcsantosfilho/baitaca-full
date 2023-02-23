@@ -3,6 +3,8 @@ import logging from '../config/logging.js';
 
 
 const index = (req, res, next) => {
+    let origin = req.get('origin');
+    logging.info(`[wordcontroller]/index origin: ${origin} | ${crossOriginIsolated} `); 
     res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
