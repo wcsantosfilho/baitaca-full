@@ -4,12 +4,14 @@ import logging from '../config/logging.js';
 
 const index = (req, res, next) => {
     logging.info(`[wordcontroller]/index host: ${req.headers.host} `); 
-    logging.info(`[wordcontroller]/index origin: ${req.headers.origin} `); 
+    logging.info(`[wordcontroller]/index origin: ${req.get('origin')}`); 
     logging.info(`[wordcontroller]/index referer: ${req.headers.referer} `); 
     console.dir(req.headers);
     console.dir(req.originalUrl);
     console.dir(req.baseUrl);
     console.dir(req.path);
+    console.dir(req.hostname);
+    console.dir(req.ip);
     res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
