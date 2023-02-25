@@ -6,9 +6,7 @@ const index = (req, res, next) => {
     logging.info(`[wordcontroller]/index host: ${req.headers.host} `); 
     logging.info(`[wordcontroller]/index origin: ${req.headers.origin} `); 
     logging.info(`[wordcontroller]/index referer: ${req.headers.referer} `); 
-    logging.info(`[wordcontroller]/index sec fetch mode: ${req.headers.sec-fetch-mode} `); 
-    logging.info(`[wordcontroller]/index sec fetch site: ${req.headers.sec-fetch-site} `); 
-    logging.info(`[wordcontroller]/index user agent: ${req.headers.user-agent} `); 
+    console.dir(req.headers);
     res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
