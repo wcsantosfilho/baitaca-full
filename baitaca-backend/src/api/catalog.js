@@ -7,7 +7,7 @@ const router = express.Router();
 // word routes
 
 // GET word Index
-router.get('/', wordController.index);
+router.get('/', verifyToken, wordController.index);
 
 // GET word List
 router.get('/word/list', verifyToken, wordController.wordList);
@@ -19,7 +19,7 @@ router.get('/word/:letter/initialLetter', verifyToken, wordController.wordListBy
 router.get('/word/:number/numberOfLetters', verifyToken, wordController.wordListByNumberOfLetters);
 
 // GET Word List by Number of Letters and Initial
-router.get('/word/:number/:letter/numberOfLettersAndInitial', verifyToken, wordController.wordListByNumberOfLettersAndInitial);
+router.get('/word/:number/:letter/numberOfLettersAndInitial', wordController.wordListByNumberOfLettersAndInitial);
 
 // GET Word Detailt
 router.get('/word/:id/detail', wordController.wordDetail);
