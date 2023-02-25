@@ -7,6 +7,9 @@ const index = (req, res, next) => {
     logging.info(`[wordcontroller]/index origin: ${req.headers.origin} `); 
     logging.info(`[wordcontroller]/index referer: ${req.headers.referer} `); 
     console.dir(req.headers);
+    console.dir(req.originalUrl);
+    console.dir(req.baseUrl);
+    console.dir(req.path);
     res.status(200).json('[wordcontroller] Not implemented: index');
 }
 
