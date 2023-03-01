@@ -22,7 +22,7 @@ function App() {
       }
       <Box fill>
         <AppHeader
-                appName="Baitaca"
+                appName="Palavragem"
                 appIcon={<GrommetIcon />}
                 onToggleSidebar={onToggleSidebar}
               />
