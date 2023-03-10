@@ -1,3 +1,29 @@
-# https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-agent: 008
+Disallow: /
+
+User-agent: SiteAuditBot
+Crawl-delay: 1
+Allow: /
+
+User-agent: Semrushbot-SI
+Allow: /
+
+User-agent: Yahoo Pipes 2.0
+Allow: /
+
+User-agent: Facebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: BingPreview
+Allow: /archive/graphs.php
+
+User-agent: Twitterbot
+Allow: /
+
+
+# Sitemap files
+#Blog
+Sitemap: https://www.palavragem.com.br/sitemap.xml
