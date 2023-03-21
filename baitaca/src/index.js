@@ -1,10 +1,14 @@
 import React from 'react';
-import { render } from 'react-dom';
+import { hydrate, render } from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const container = document.getElementById('root');
-render(<App tab="home" />, container);
+if (container.hasChildNodes()) {
+  hydrate(<App />, container)
+} else {
+  render(<App />, container);
+}
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
