@@ -42,6 +42,7 @@ const workingArea = () => {
   return (
     <div className="workingArea">
       <Box flex>
+        <Text>--workingArea.js--</Text>
         <FormSearch 
           onFormSearchChange={handleFormSearchChange}
           onFormSearchReset={handleFormReset}
