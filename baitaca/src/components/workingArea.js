@@ -4,7 +4,7 @@ import axios from 'axios';
 import FormSearch from './formSearch.js'
 import DataArea from './dataArea.js';
 
-const workingArea = (gridArea) => {
+const workingArea = ({gridArea}) => {
   const [activeSearch, setactiveSearch] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -41,7 +41,7 @@ const workingArea = (gridArea) => {
 
   return (
     <Box gridArea={gridArea}>
-      <Text>--workingArea.js--</Text>
+      <Text>--workingArea.js-- {gridArea}</Text>
       <FormSearch 
         onFormSearchChange={handleFormSearchChange}
         onFormSearchReset={handleFormReset}

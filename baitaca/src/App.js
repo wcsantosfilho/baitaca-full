@@ -28,11 +28,11 @@ function App() {
           appIcon={<GrommetIcon />}
           gridArea="header"
         />
-        <Box background="light-5" gridArea='sidebar'>
+        <Box background="light-5" gridArea="sidebar">
             --sidebar--
         </Box>
-        <WorkingArea gridArea="main"/>
-        <Box background="light-5" gridArea='footer'>
+        <WorkingArea gridArea="main" />
+        <Box background="light-5" gridArea="footer">
             --footer--
         </Box>
       </Grid>
