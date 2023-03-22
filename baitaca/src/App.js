@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Box, Grommet, Text } from 'grommet';
+import React from 'react';
+import { Box, Grid, Grommet } from 'grommet';
 import { Grommet as GrommetIcon } from "grommet-icons";
 
 import { AppHeader } from './components/appHeader.js';
@@ -9,27 +9,33 @@ import { theme } from "./theme.js";
 //dotenv.config();
 
 function App() {
-  const [ showSidebar, setShowSideBar ] = useState(true)
-
-  const onToggleSidebar = () => {
-    setShowSideBar(!showSidebar)
-  };
-
   return (
     <Grommet theme={theme} full>
-      { process.env.NODE_ENV === 'development' &&
-        <Text>{process.env.NODE_ENV} | {process.env.REACT_APP_API_URL} | {process.env.REACT_APP_FOO}</Text>
-      }
-      <Box fill>
+      <Grid
+        rows={['xxsmall', 'medium', 'xxsmall']}
+        columns={['1/4', '3/4']}
+        areas={[
+          ['header', 'header'],
+          ['sidebar', 'main'],
+          ['footer', 'footer'],
+        ]}
+        justifyContent='start'
+        alignContent='start'
+        gap="large"
+      >
         <AppHeader
-                appName="Palavragem"
-                appIcon={<GrommetIcon />}
-                onToggleSidebar={onToggleSidebar}
-              />
-          <div className="App">
-            <WorkingArea />
-          </div>
-      </Box>
+          appName="Palavragem"
+          appIcon={<GrommetIcon />}
+          gridArea="header"
+        />
+        <Box background="light-5" gridArea='sidebar'>
+            --sidebar--
+        </Box>
+        <WorkingArea gridArea="main"/>
+        <Box background="light-5" gridArea='footer'>
+            --footer--
+        </Box>
+      </Grid>
     </Grommet>
   );
 }

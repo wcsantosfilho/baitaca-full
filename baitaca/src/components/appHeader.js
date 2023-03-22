@@ -5,7 +5,7 @@ import { Box, Heading } from "grommet";
 export const AppHeader = ({
   appName,
   appIcon,
-  onToggleSidebar
+  gridArea
 }) => (
   <Box
     tag="header"
@@ -17,6 +17,7 @@ export const AppHeader = ({
     responsive={false}
     pad={{ vertical: "xsmall" }}
     style={{ position: "relative" }}
+    gridArea={gridArea}
   >
     <Box
         flex={false}

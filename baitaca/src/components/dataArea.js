@@ -10,13 +10,14 @@ const dataArea = (props) => {
         }]
 
     return (
-        <Box fixed
+        <Box
             direction="row-responsive"
             justify="center"
             align="center"
             pad="large"
             background="dark-1"
             gap="medium"
+            flex overflow="auto"
             >
             <Text>--dataArea.js--</Text>
             <DataTable columns= {columns} data={props.dataArray} />

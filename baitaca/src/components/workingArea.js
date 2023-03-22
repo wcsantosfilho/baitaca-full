@@ -4,7 +4,7 @@ import axios from 'axios';
 import FormSearch from './formSearch.js'
 import DataArea from './dataArea.js';
 
-const workingArea = () => {
+const workingArea = (gridArea) => {
   const [activeSearch, setactiveSearch] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -40,31 +40,29 @@ const workingArea = () => {
 
 
   return (
-    <div className="workingArea">
-      <Box flex>
-        <Text>--workingArea.js--</Text>
-        <FormSearch 
-          onFormSearchChange={handleFormSearchChange}
-          onFormSearchReset={handleFormReset}
-        />
-        {loading &&
-          <Box align="center" direction="row" gap="small" pad="small">
-            <Spinner
-              border={[
-                {
-                  side: 'all',
-                  color: 'brand',
-                  size: 'medium',
-                  style: 'dotted',
-                },
-              ]}
-            />
-            <Text>Loading...</Text>
-          </Box>
-        }
-        <DataArea dataArray={activeSearch} />
-      </Box>
-    </div>
+    <Box gridArea={gridArea}>
+      <Text>--workingArea.js--</Text>
+      <FormSearch 
+        onFormSearchChange={handleFormSearchChange}
+        onFormSearchReset={handleFormReset}
+      />
+      {loading &&
+        <Box align="center" direction="row" gap="small" pad="small">
+          <Spinner
+            border={[
+              {
+                side: 'all',
+                color: 'brand',
+                size: 'medium',
+                style: 'dotted',
+              },
+            ]}
+          />
+          <Text>Loading...</Text>
+        </Box>
+      }
+      <DataArea dataArray={activeSearch} />
+    </Box>
   );
 }
 
