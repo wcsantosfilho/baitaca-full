@@ -29,13 +29,12 @@ export const formSearch = (props) => {
   }
 
   return (
-    <Box fill
+    <Box 
       direction="row-responsive"
       justify="center"
       align="center"
-      pad="xlarge"
       background="dark-2"
-      gap="medium"
+      pad="medium"
       >
       <Text>--formSearch.js--</Text>
       <Form
@@ -59,7 +58,7 @@ export const formSearch = (props) => {
               '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'
               ]} />
           </FormField>
-          <Box direction="row" justify="between" margin={{ top: 'medium' }}>
+          <Box direction="row-responsive" justify="center" margin={{ top: 'medium', bottom: 'medium' } }>
               <Button type="reset" label="Limpar" />
               <Button type="submit" label="Pesquisar" primary />
           </Box>

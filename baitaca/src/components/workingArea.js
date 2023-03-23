@@ -40,14 +40,14 @@ const workingArea = ({gridArea}) => {
 
 
   return (
-    <Box gridArea={gridArea}>
+    <Box gridArea={gridArea} >
       <Text>--workingArea.js-- {gridArea}</Text>
       <FormSearch 
         onFormSearchChange={handleFormSearchChange}
         onFormSearchReset={handleFormReset}
       />
       {loading &&
-        <Box align="center" direction="row" gap="small" pad="small">
+        <Box align="center" direction="row-responsive" gap="small">
           <Spinner
             border={[
               {

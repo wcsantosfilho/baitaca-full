@@ -9,7 +9,7 @@ export const AppHeader = ({
 }) => (
   <Box
     tag="header"
-    direction="row"
+    direction="row-responsive"
     background="brand"
     align="center"
     elevation="medium"

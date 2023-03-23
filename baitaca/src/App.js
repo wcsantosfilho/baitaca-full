@@ -13,6 +13,7 @@ function App() {
     <Grommet theme={theme} full>
       <Grid
         rows={['xxsmall', 'medium', 'xxsmall']}
+        responsive={true}
         columns={['1/4', '3/4']}
         areas={[
           ['header', 'header'],
@@ -21,18 +22,18 @@ function App() {
         ]}
         justifyContent='start'
         alignContent='start'
-        gap="large"
+        gap="small"
       >
         <AppHeader
           appName="Palavragem"
           appIcon={<GrommetIcon />}
           gridArea="header"
         />
-        <Box background="light-5" gridArea="sidebar">
+        <Box direction="row-responsive" background="light-5" gridArea="sidebar">
             --sidebar--
         </Box>
         <WorkingArea gridArea="main" />
-        <Box background="light-5" gridArea="footer">
+        <Box direction="row-responsive" background="light-5" gridArea="footer">
             --footer--
         </Box>
       </Grid>
