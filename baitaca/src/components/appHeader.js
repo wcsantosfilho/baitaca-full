@@ -1,46 +1,65 @@
 import React from "react";
 
-import { Box, Heading } from "grommet";
+import { Header, Heading } from "grommet";
 
 export const AppHeader = ({
   appName,
   appIcon,
   gridArea
 }) => (
-  <Box
-    tag="header"
-    direction="row-responsive"
-    background="brand"
-    align="center"
-    elevation="medium"
-    justify="between"
-    responsive={false}
-    pad={{ vertical: "xsmall" }}
-    style={{ position: "relative" }}
+  <Header 
+    align="center" 
+    direction="row" 
+    flex={false} 
+    justify="between" 
+    gap="medium" 
     gridArea={gridArea}
-  >
-    <Box
-        flex={false}
-        direction="row"
-        align="center"
-        margin={{ left: "small" }}
+    background={{"color":"brand"}}
     >
-    {appIcon}
-    <Heading level="4" margin={{ left: "small", vertical: "none" }}>
-        {appName}
-    </Heading>
-    </Box>
+      {appIcon}
+      <Heading  size="small" textAlign="start">
+          {appName}
+      </Heading>
+  </Header>
+);
 
-    <Box direction="row" align="center">
+
+/*
+
+    <Box
+      tag="header"
+      direction="row-responsive"
+      background="brand"
+      align="center"
+      elevation="medium"
+      justify="between"
+      responsive={false}
+      pad={{ vertical: "xsmall" }}
+      style={{ position: "relative" }}
+      gridArea={gridArea}
+    >
       <Box
-        margin={{ left: "medium" }}
-        round="xsmall"
-        background={{ color: "white", opacity: "weak" }}
-        direction="row"
-        align="center"
-        pad={{ horizontal: "small" }}
+          flex={false}
+          direction="row"
+          align="center"
+          margin={{ left: "small" }}
       >
+      {appIcon}
+      <Heading level="4" margin={{ left: "small", vertical: "none" }}>
+          {appName}
+      </Heading>
+      </Box>
+
+      <Box direction="row" align="center">
+        <Box
+          margin={{ left: "medium" }}
+          round="xsmall"
+          background={{ color: "white", opacity: "weak" }}
+          direction="row"
+          align="center"
+          pad={{ horizontal: "small" }}
+        >
+        </Box>
       </Box>
     </Box>
-  </Box>
-);
+    */

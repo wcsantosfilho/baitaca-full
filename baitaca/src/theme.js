@@ -4,18 +4,11 @@ import { deepMerge } from "grommet/utils";
 export const theme = deepMerge(Grommet, {
   global: {
     colors: {
-      active: "dark-5",
-      placeholder: "rgba(255, 255,255, 0.4)"
-    },
-    elevation: {
-      light: {
-        small: "0 0 1px 0 rgba(0, 0, 0, 0.40), 0 1px 2px 0 rgba(0,0,0,0.40)",
-        medium: "0 0 2px 0 rgba(0,0,0,0.40), 0 2px 4px 0 rgba(0,0,0,0.40)",
-        large: "0 0 1px 0 rgba(0,0,0,0.40), 0 4px 8px 0 rgba(0,0,0,0.40)",
-        xlarge: "0 0 1px 0 rgba(0,0,0,0.40), 0 8px 16px 0 rgba(0,0,0,0.40)"
-      }
+      placeholder: "rgba(255, 255,255, 0.4)",
+      brand: "rgba(80,80,80,0.5)"
     },
     font: {
+      family: "Pacifico",
       size: "16px",
       height: "20px"
     },

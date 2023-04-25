@@ -1,12 +1,10 @@
 import React, { useState } from 'react';
 import {
-  Box,
   Button,
   Form,
   FormField,
   MaskedInput,
-  Select,
-  Text
+  Select
 } from 'grommet';
 
 const defaultValue = {
@@ -29,41 +27,30 @@ export const formSearch = (props) => {
   }
 
   return (
-    <Box 
-      direction="row-responsive"
-      justify="center"
-      align="center"
-      background="dark-2"
-      pad="medium"
-      >
-      <Text>--formSearch.js--</Text>
-      <Form
+    <Form
       value={value}
       onChange={(nextValue, { touched }) => {
           setValue(nextValue);
       }}
       onReset={handleReset}
       onSubmit={handleChange}
-      >
-          <FormField label="Inicial" name="initial">
-              <MaskedInput name="initial" suggestions={suggestions} 
-              mask={[
-                  { regexp: /^\w{1}$/}
-              ]}
-              />
-          </FormField>
-          <FormField label="Qtd Letras" name="numberOfLetters">
-              <Select name="numberOfLetters" options={['1', '2', '3', '4', '5', '6',
-              '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18',
-              '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'
-              ]} />
-          </FormField>
-          <Box direction="row-responsive" justify="center" margin={{ top: 'medium', bottom: 'medium' } }>
-              <Button type="reset" label="Limpar" />
-              <Button type="submit" label="Pesquisar" primary />
-          </Box>
-      </Form>
-    </Box>
+    >
+      <FormField label="Inicial" name="initial">
+          <MaskedInput name="initial" suggestions={suggestions} 
+          mask={[
+              { regexp: /^\w{1}$/}
+          ]}
+          />
+      </FormField>
+      <FormField label="Qtd Letras" name="numberOfLetters">
+          <Select name="numberOfLetters" options={['1', '2', '3', '4', '5', '6',
+          '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18',
+          '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'
+          ]} />
+      </FormField>
+      <Button type="reset" label="Limpar" />
+      <Button type="submit" label="Pesquisar" primary />
+    </Form>
   );
 };
 

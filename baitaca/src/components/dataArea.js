@@ -1,5 +1,5 @@
 import React from 'react';
-import {  Box, DataTable, Text } from 'grommet';
+import {  DataTable, Text } from 'grommet';
 
 const dataArea = (props) => {
     const columns = [
@@ -10,17 +10,12 @@ const dataArea = (props) => {
         }]
 
     return (
-        <Box
-            direction="row-responsive"
-            justify="center"
-            align="center"
-            pad="large"
-            background="dark-1"
-            gap="medium"
-            >
-            <Text>--dataArea.js--</Text>
-            <DataTable columns= {columns} data={props.dataArray} />
-        </Box>
+        <DataTable 
+            step={50} 
+            paginate={false}
+            columns= {columns} 
+            data={props.dataArray} 
+        />
     )
 }
 

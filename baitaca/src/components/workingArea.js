@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import { Box, Spinner, Text } from 'grommet';
+import { Box, Spinner, Main, Text } from 'grommet';
 import axios from 'axios';
 import FormSearch from './formSearch.js'
 import DataArea from './dataArea.js';
@@ -17,6 +17,7 @@ const workingArea = ({gridArea}) => {
         setactiveSearch(response.data);
     })
     .catch((err) => {
+      if (err.response) {
         let httpStatus = err.response.status;
         switch (httpStatus) {
           case 500:
@@ -28,7 +29,12 @@ const workingArea = ({gridArea}) => {
           default:
             setactiveSearch([{word: "Server is out of service"}]);
         }
-    })
+      } else if (err.request) {
+        setactiveSearch([{word: "Unknowledge error"}])
+      } else {
+        setactiveSearch([{word: "Yet another greater error"}])
+      }
+    }) 
     .finally(() => {
       setLoading(false)
     })
@@ -40,14 +46,15 @@ const workingArea = ({gridArea}) => {
 
 
   return (
-    <Box gridArea={gridArea} >
-      <Text>--workingArea.js-- {gridArea}</Text>
-      <FormSearch 
-        onFormSearchChange={handleFormSearchChange}
-        onFormSearchReset={handleFormReset}
-      />
+    <Main gridArea={gridArea} pad="small" background={{"color":"background-contrast"}}>
+      <Box align="center" justify="center" pad="medium" margin="xsmall" >
+        <FormSearch 
+          onFormSearchChange={handleFormSearchChange}
+          onFormSearchReset={handleFormReset}
+        />
+      </Box>
       {loading &&
-        <Box align="center" direction="row-responsive" gap="small">
+        <div>
           <Spinner
             border={[
               {
@@ -59,10 +66,17 @@ const workingArea = ({gridArea}) => {
             ]}
           />
           <Text>Loading...</Text>
-        </Box>
+        </div>
       }
-      <DataArea dataArray={activeSearch} />
-    </Box>
+      <Box align="center" 
+        justify="center" 
+        flex={false} 
+        margin="xsmall" 
+        background={{"color":"active-text", "opacity":"medium"}}
+      >
+        <DataArea dataArray={activeSearch} />
+      </Box>
+    </Main>
   );
 }
 
