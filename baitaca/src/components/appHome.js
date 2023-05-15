@@ -3,9 +3,7 @@ import { Box, Footer, Grid, Page, PageContent, PageHeader, Sidebar, Text } from 
 import { AppHeader } from "./appHeader";
 import WorkingArea from "./workingArea";
 
-export const AppHome = ({RouterContext}) => {
-  const { push } = React.useContext(RouterContext)
-
+export const AppHome = () => {
   return (
     <Page background={{"color":"background-back"}}>
         <PageContent>

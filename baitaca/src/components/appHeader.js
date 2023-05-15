@@ -1,14 +1,13 @@
-import React from "react";
-import { Anchor, Header, Heading, Nav } from "grommet";
+import React from 'react';
+import { Anchor, Header, Heading, Nav } from 'grommet';
 
-export const AppHeader = ({appName, RouterContext}) => {
-  const { push } = React.useContext(RouterContext)
+export const AppHeader = ({appName}) => {
 
   return (
     <Header align="center" direction="row" flex={false} justify="between" gap="medium" background={{"color":"active-text"}}>
       <Nav align="center" flex={false} direction="row">
-        <Anchor label="sobre" onClick={() => push("/about")} />
-        <Anchor label="pesquisa" onClick={() => push("/")} />
+        <Anchor label="sobre" href="/about" />
+        <Anchor label="pesquisa" href="/" />
       </Nav>
       <Heading size="small" textAlign="start">
         {appName}

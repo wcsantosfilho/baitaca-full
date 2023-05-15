@@ -2,8 +2,7 @@ import React from "react";
 import { Card, CardHeader, CardBody, Grid, Image, Page, PageContent, PageHeader, Text } from "grommet";
 import { AppHeader } from "./appHeader";
 
-export const AppAbout = ({RouterContext}) => {
-    const { push } = React.useContext(RouterContext)
+export const AppAbout = () => {
  
     return (
         <Page background={{"color":"background-back"}}>
