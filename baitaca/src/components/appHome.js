@@ -10,10 +10,9 @@ export const AppHome = () => {
             <AppHeader appName="Palavragem"/>
         </PageContent>
         <PageContent>
-            <PageHeader title="Pesquisa" margin="xsmall" />
+            <PageHeader title="Pesquisa palavras" margin="xsmall" />
             <Grid 
             rows={["xxsmall","auto","xxsmall"]} 
-            a11yTitle="grid" 
             columns={["1/4","3/4"]} 
             areas={[
                 {"name":"Header","start":[0,0],"end":[1,0]},
@@ -36,7 +35,8 @@ export const AppHome = () => {
                 <Box align="center" justify="center" />
             </Sidebar>
             <WorkingArea gridArea="Main" />
-            <Footer align="center" direction="row" flex={false} justify="between" gap="medium" gridArea="Footer" background={{"color":"brand"}}>
+            <Footer align="center" direction="row" flex={false} justify="between" gap="medium" gridArea="Footer" 
+                background={{"color":"active-background"}}>
                 <Text textAlign="center">
                 Palavragem é um produto W&A Soluções Tecnológicas. Todos os direitos reservados.
                 </Text>

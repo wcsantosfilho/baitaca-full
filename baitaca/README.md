@@ -8,6 +8,7 @@
 [ ] SEO: https://userguiding.com/pt-br/blog/ferramentas-de-seo-gratuitas/
 [ ] Amplitude
 [X] Spinner
+[ ] Página sobre a origem da palavra cruzada
 [ ] Recover do PM2 em caso de erro/crash
 [ ] Centralizar Spinner
 [ ] Palavras em duas colunas(?)
