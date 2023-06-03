@@ -9,10 +9,10 @@ import {
 
 const defaultValue = {
   initial: '',
-  numberOfLetters: ''
+  numberOfLetters: '',
+  others: ''
 };
 
-const suggestions = ['a', 'b', 'c', 'd'];
 
 export const formSearch = (props) => {
   const [value, setValue] = useState(defaultValue);
@@ -36,7 +36,7 @@ export const formSearch = (props) => {
       onSubmit={handleChange}
     >
       <FormField label="Inicial" name="initial" aria-label="Letra inicial">
-          <MaskedInput name="initial" suggestions={suggestions} 
+          <MaskedInput name="initial" 
           mask={[
               { regexp: /^\w{1}$/}
           ]}
@@ -47,6 +47,13 @@ export const formSearch = (props) => {
           '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18',
           '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'
           ]} />
+      </FormField>
+      <FormField label="Outras letras" name="others" aria-label="Outras letras que estão na palavra">
+          <MaskedInput name="others"
+          mask={[
+              { regexp: /^\w*$/}
+          ]}
+          />
       </FormField>
       <Button type="reset" label="Limpar" />
       <Button type="submit" label="Pesquisar" primary />

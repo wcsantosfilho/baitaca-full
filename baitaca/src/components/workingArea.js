@@ -11,7 +11,12 @@ const workingArea = ({gridArea}) => {
   const handleFormSearchChange = (value) => {
     setLoading(true);
     let urlBase = process.env.REACT_APP_API_URL;
-    let uri = urlBase + value.numberOfLetters + '/' + value.initial + '/numberOfLettersAndInitial'
+    let uri = '/';
+    if (value.others) { 
+      uri = urlBase + value.numberOfLetters + '/' + value.initial + '/' + value.others + '/numberOfLettersInitialAndOthers'
+    } else {
+      uri = urlBase + value.numberOfLetters + '/' + value.initial + '/numberOfLettersAndInitial'
+    }
     axios.get(uri)
     .then((response) => {
         setactiveSearch(response.data);
