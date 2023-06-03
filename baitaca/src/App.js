@@ -9,9 +9,13 @@ import { AppCrossWords } from './components/appCrossWords.js';
 import { AppBiggest } from './components/appBiggest.js';
 import { AppBiology } from './components/appBiology.js';
 
-// import { initAmplitude } from './utilities/amplitude.js'
+import { initAmplitude, sendAmplitudeTrack } from './utilities/amplitude.js'
 
-// initAmplitude();
+initAmplitude();
+const eventProperties = {
+  applicationVersion: '0.0.1',
+};
+sendAmplitudeTrack('Palavragem - Application Started', eventProperties);
 
 function App() {
   return (
