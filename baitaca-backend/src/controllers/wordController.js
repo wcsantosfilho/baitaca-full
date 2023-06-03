@@ -117,6 +117,47 @@ const wordListByNumberOfLettersAndInitial = async (req, res, next) => {
     }
 }
 
+const wordListByNumberOfLettersInitialAndOthers = async (req, res, next) => {
+    try {
+        const number = parseInt(req.params.number)
+        const initialLetter = req.params.letter.toLowerCase()
+        const otherLetters = req.params.others.toLowerCase()
+        let otherExpression = '';
+        if (otherLetters) {
+            let arrayOfOtherLetters = otherLetters.split('');
+            otherExpression = arrayOfOtherLetters.map(letter => '(?=.*'+letter+')').join('');
+            console.log(`Number: ${number} | Initial: ${initialLetter} | Others: ${otherLetters} | ${otherExpression}`)
+        } else {
+            console.log('others must be present')
+        }
+        
+        const findResult = Word
+            .find({
+                $and: [
+                    { word: { $exists: true }}, 
+                    { $expr: { $eq: [{ $strLenCP: '$word' }, number] } }, 
+                    { word: new RegExp('^'+initialLetter+otherExpression+'.*$')} 
+                ]
+            })
+            .select({ _id: 1, word: 1})
+            .sort({ word: 1})
+            .exec((err, findResult) => {
+                if (err) {
+                    return next(err);
+                }
+                if ( findResult.length > 0) {
+                    logging.info(`[wordListByNumberOfLettersInitialAndOthers] status:200 number:${number} letter:${initialLetter} others:${otherLetters}`);
+                    res.status(200).json(findResult);
+                } else {
+                    logging.info(`status: 404`);
+                    res.status(404).json({ msg: 'Nenhuma palavra encontrada'});
+                }
+            })
+    } catch (error) {
+        return next(error)
+    }
+}
+
 const wordDetail = (req, res, next) => {
     const findResult = Word.findById(req.params.id)
         .exec((err, findResult) => {
@@ -131,4 +172,4 @@ const wordDetail = (req, res, next) => {
         });
 }
 
-export default { index, wordList, wordListByInitialLetter, wordDetail, wordListByNumberOfLetters, wordListByNumberOfLettersAndInitial }
+export default { index, wordList, wordListByInitialLetter, wordDetail, wordListByNumberOfLetters, wordListByNumberOfLettersAndInitial, wordListByNumberOfLettersInitialAndOthers }
