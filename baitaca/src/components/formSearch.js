@@ -51,7 +51,7 @@ export const formSearch = (props) => {
       <FormField label="Outras letras" name="others" aria-label="Outras letras que estão na palavra">
           <MaskedInput name="others"
           mask={[
-              { regexp: /^\w*$/}
+              { regexp: /^[a-záàâãéèêíïóôõöúçñ ]*$/i}
           ]}
           />
       </FormField>
