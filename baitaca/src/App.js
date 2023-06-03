@@ -9,6 +9,10 @@ import { AppCrossWords } from './components/appCrossWords.js';
 import { AppBiggest } from './components/appBiggest.js';
 import { AppBiology } from './components/appBiology.js';
 
+// import { initAmplitude } from './utilities/amplitude.js'
+
+// initAmplitude();
+
 function App() {
   return (
     <BrowserRouter>
