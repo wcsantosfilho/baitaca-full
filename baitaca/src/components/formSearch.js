@@ -7,6 +7,8 @@ import {
   Select
 } from 'grommet';
 
+import { ElementTip } from './elementTip.js';
+
 const defaultValue = {
   initial: '',
   numberOfLetters: '',
@@ -35,20 +37,21 @@ export const formSearch = (props) => {
       onReset={handleReset}
       onSubmit={handleChange}
     >
-      <FormField label="Inicial" name="initial" aria-label="Letra inicial">
+      <ElementTip text="pesquise palavras com as seguintes características:"></ElementTip>
+      <FormField label="Começa com a letra:" name="initial" aria-label="Letra inicial">
           <MaskedInput name="initial" 
           mask={[
               { regexp: /^\w{1}$/}
           ]}
           />
       </FormField>
-      <FormField label="Qtd Letras" name="numberOfLetters" aria-label="Quantidade de letras">
+      <FormField label="Têm quantas letras?" name="numberOfLetters" aria-label="Quantidade de letras">
           <Select name="numberOfLetters" options={['1', '2', '3', '4', '5', '6',
           '7', '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18',
           '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30'
           ]} />
       </FormField>
-      <FormField label="Outras letras" name="others" aria-label="Outras letras que estão na palavra">
+      <FormField label="Contém as letras:" name="others" aria-label="Outras letras que estão na palavra">
           <MaskedInput name="others"
           mask={[
               { regexp: /^[a-záàâãéèêíïóôõöúçñ ]*$/i}
