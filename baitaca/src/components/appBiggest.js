@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardHeader, CardBody, Grid, Page, PageContent, PageHeader, Text } from "grommet";
 import { AppHeader } from "./appHeader";
+import AdsComponent from "../utilities/AdsComponent.js"
 
 const DATA = [
     {letter: "A", word: "acetilparaetoxilfeniluretânico"},
@@ -65,6 +66,7 @@ export const AppBiggest = () => {
                 <Grid columns="small" pad="small">
                     <Looper />
                 </Grid>
+                <AdsComponent dataAdSlot='7689151006' />
             </PageContent>
         </Page>
     )

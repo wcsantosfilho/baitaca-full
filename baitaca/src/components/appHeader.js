@@ -19,7 +19,13 @@ export const AppHeader = ({appName}) => {
             {label: 'A magia das palavras cruzadas', href: "/crossWords"},
             {label: 'Maiores palavras de cada letra', href: "/biggestWordOfEachLetter"},
             {label: 'Palavras curiosas da biologia', href: "/curiousBiologyWords"}
-          ]
+          ],
+          [
+            {label: 'Palavras mais comums com A', href: "/commomCrossWordsWithA"},
+            {label: 'Palavras mais comums com B', href: "/commomCrossWordsWithB"},
+            {label: 'Palavras mais comums com C', href: "/commomCrossWordsWithC"},
+          ],
+
         ]} />
         <Nav align="center" flex={false} direction="row">
           <Anchor label="" href="/about" />
@@ -27,6 +33,7 @@ export const AppHeader = ({appName}) => {
           <Anchor label="" href="/crossWords" />
           <Anchor label="" href="/biggestWordOfEachLetter" />
           <Anchor label="" href="/curiousBiologyWords" />
+          <Anchor label="" href="/commomCrossWordsWithA" />
         </Nav>
         <Heading size="small" textAlign="start">
           {appName}
