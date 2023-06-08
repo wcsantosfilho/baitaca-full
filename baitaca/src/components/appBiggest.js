@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import { Card, CardHeader, CardBody, Grid, Page, PageContent, PageHeader, Text } from "grommet";
 import { AppHeader } from "./appHeader";
 import AdsComponent from "../utilities/AdsComponent.js"
@@ -58,6 +59,10 @@ const Looper = () => {
 export const AppBiggest = () => {
     return (
         <Page background={{"color":"background-back"}}>
+            <Helmet> 
+                <title>"As mais longas palavras de cada letra | Palavragem"</title>
+                <link rel="canonical" href="https://palavragem.com.br/biggestWordOfEachLetter" />
+            </Helmet>
             <PageContent>
                 <AppHeader appName="Palavragem"/>
             </PageContent>

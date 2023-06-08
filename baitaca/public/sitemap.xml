@@ -5,24 +5,53 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://www.palavragem.com.br/</loc>
-  <lastmod>2023-03-09</lastmod>
-</url>
-<url>
-  <loc>https://www.palavragem.com.br/about/</loc>
-  <lastmod>2023-05-22</lastmod>
-</url>
-<url>
-  <loc>https://www.palavragem.com.br/biggestWordOfEachLetter/</loc>
-  <lastmod>2023-05-22</lastmod>
-</url>
-<url>
-  <loc>https://www.palavragem.com.br/curiousBiologyWords/</loc>
-  <lastmod>2023-05-22</lastmod>
-</url>
-
+    <url>
+        <loc>https://palavragem.com.br</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/about</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/crosswords</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/biggestwordofeachletter</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/curiousbiologywords</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/commomcrosswordswitha</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/commomcrosswordswithb</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://palavragem.com.br/commomcrosswordswithc</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
 
 </urlset>

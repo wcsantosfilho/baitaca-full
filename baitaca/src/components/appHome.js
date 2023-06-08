@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from 'react-helmet';
 import { Box, Footer, Grid, Page, PageContent, PageHeader, Sidebar, Text } from "grommet";
 import { AppHeader } from "./appHeader";
 import WorkingArea from "./workingArea";
@@ -6,6 +7,10 @@ import WorkingArea from "./workingArea";
 export const AppHome = () => {
   return (
     <Page background={{"color":"background-back"}}>
+        <Helmet> 
+            <title>"Consulta palavras para ajudar cruzadistas e curiosos | Palavragem"</title>
+            <link rel="canonical" href="https://palavragem.com.br/" />
+        </Helmet>
         <PageContent>
             <AppHeader appName="Palavragem"/>
         </PageContent>

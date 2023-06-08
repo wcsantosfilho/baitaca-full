@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Grid, Page, PageContent, PageHeader, Paragraph } from "grommet";
 import { AppHeader } from "./appHeader";
 
@@ -6,6 +7,10 @@ export const AppCrossWords = () => {
  
     return (
         <Page background={{"color":"background-back"}}>
+            <Helmet> 
+                <title>"A magia das palavras cruzadas | Palavragem"</title>
+                <link rel="canonical" href="https://palavragem.com.br/biggestWordOfEachLetter" />
+            </Helmet>
             <PageContent>
                 <AppHeader appName="Palavragem"/>
             </PageContent>

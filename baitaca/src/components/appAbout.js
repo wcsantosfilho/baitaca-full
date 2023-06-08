@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import { Card, CardHeader, CardBody, Grid, Page, PageContent, PageHeader, Paragraph, Text } from "grommet";
 import { AppHeader } from "./appHeader";
 
@@ -6,6 +7,11 @@ export const AppAbout = () => {
  
     return (
         <Page background={{"color":"background-back"}}>
+            <Helmet> 
+                <title>"Sobre | Palavragem"</title>
+                <link rel="canonical" href="https://palavragem.com.br/biggestWordOfEachLetter" />
+            </Helmet>
+
             <PageContent>
                 <AppHeader appName="Palavragem"/>
             </PageContent>
