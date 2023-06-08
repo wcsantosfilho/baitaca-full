@@ -12,43 +12,158 @@
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/about</loc>
+        <loc>https://palavragem.com.br/sobre</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/crosswords</loc>
+        <loc>https://palavragem.com.br/palavras-cruzadas</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/biggestwordofeachletter</loc>
+        <loc>https://palavragem.com.br/maior-palavra-de-cada-letra</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/curiousbiologywords</loc>
+        <loc>https://palavragem.com.br/palavras-curiosas-da-biologia</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/commomcrosswordswitha</loc>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-a</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/commomcrosswordswithb</loc>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-b</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>
     </url>
     <url>
-        <loc>https://palavragem.com.br/commomcrosswordswithc</loc>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-<c/loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <loc>https://palavragem.com.br/palavras-que-comecam-com-d</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-e</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-f</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-g</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-h</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-i</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-j</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-k</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-l</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-m</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-n</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-o</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-p</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-q</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-r</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-s</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-t</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-u</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-v</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-w</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-x</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-y</loc>
+        <lastmod>2023-06-07</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.5</priority>
+    </url>
+        <loc>https://palavragem.com.br/palavras-que-comecam-com-z</loc>
         <lastmod>2023-06-07</lastmod>
         <changefreq>always</changefreq>
         <priority>0.5</priority>

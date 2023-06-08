@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from 'react-helmet';
-import { Card, CardHeader, CardBody, Grid, Page, PageContent, PageHeader, Text } from "grommet";
+import { Box, Card, CardHeader, CardBody, Grid, Image, Page, PageContent, PageHeader, Text, Paragraph } from "grommet";
 import { AppHeader } from "./appHeader";
 import AdsComponent from "../utilities/AdsComponent.js"
 
@@ -68,6 +68,42 @@ export const AppBiggest = () => {
             </PageContent>
             <PageContent>
                 <PageHeader title="As mais longas palavras de cada letra" />
+                <Box pad="small" gap="small" direction="row" align="start">
+                    <Box
+                        width="large"
+                        height={{ max: '300px' }}
+                        round="small"
+                        align="center"
+                        justify="center"
+                        overflow="auto"
+                    >
+                        <Image fallback="//palavragem.com.br/extremos.png"
+                                src="//palavragem.com.br/extremos.png"
+                                alt="extremos"
+                                fill fit="cover"
+                        />
+                        <Text size="xxsmall" align="left">
+                        </Text>
+                    </Box>
+                    <Box
+                        width="large"
+                        height={{ max: '300px' }}
+                        round="small"
+                        align="center"
+                        justify="center"
+                        overflow="auto"
+                    >
+                        <Paragraph fill color="text-weak">
+                            Os extremos sempre nos chamam a atenção, não é mesmo? Pensando nessa constante admiração
+                            resolvemos buscar com auxílio do ChatGPT as maiores palavras com cada inicial da língua 
+                            portuguesa. A lista não é consenso e certamente causa controvérsia. Não pretendemos ser definitivos
+                            nessa lista, apenas entreter e satisfazer alguma curiosidade.
+                            Vocês vão notar que muitas das palavras aqui são referências a termos médicos e da área
+                            química farmacêutica e tem o tamanho que tem pela junção de radicais, prefixos e sufixos.
+                            Então, poderíamos dizer que não são palavras "puras"? Fica a questão no ar...
+                        </Paragraph>
+                    </Box>
+                </Box>
                 <Grid columns="small" pad="small">
                     <Looper />
                 </Grid>

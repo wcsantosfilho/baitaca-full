@@ -13,7 +13,7 @@
 [ ] Centralizar Spinner
 [ ] Palavras em duas colunas(?)
 [ ] Link das palavras para dicionário
-[ ] Consulta: Palavra com n letras, começa com 'x' e contém 'a AND b AND c AND d...'
+[x] Consulta: Palavra com n letras, começa com 'x' e contém 'a AND b AND c AND d...'
     db.words.find({ 
         $and: [ 
             { word: { $exists: true }}, 
