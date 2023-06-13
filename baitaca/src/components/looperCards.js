@@ -13,7 +13,7 @@ export const Looper = ({ dataList }) => {
                             </Text>
                         </CardHeader>
                         <CardBody pad="small">
-                            <Text size="auto" weight="bold" color="dark-2" textAlign="center">
+                            <Text size="auto" weight="bold" color="brand" textAlign="center">
                                 {item.word}
                             </Text>
                         </CardBody>

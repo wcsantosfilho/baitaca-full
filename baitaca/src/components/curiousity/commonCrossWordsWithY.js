@@ -15,7 +15,7 @@ export const CommomCrossWordsWithY = () => {
             title="Aqui estão 5 palavras comuns em palavras cruzadas que começam com a letra Y"
             explanation="Essas palavras podem ser utilizadas em palavras cruzadas, mas é importante notar que palavras iniciadas com a letra Y são menos comuns nesse contexto. A popularidade e a frequência das palavras podem variar dependendo do tipo de palavra cruzada e do nível de dificuldade."
             data={DATA} 
-            canonicalLink="https://palavragem.com.br/commomCrossWordsWithYV"
+            canonicalLink="https://palavragem.com.br/palavras-que-comecam-com-Y"
         />
     )
 }

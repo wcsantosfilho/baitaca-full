@@ -30,7 +30,7 @@ export const CommomCrossWordsWithB = () => {
             title="Aqui estão 20 palavras comuns em palavras cruzadas que começam com a letra B"
             explanation="Essas palavras são frequentemente usadas em palavras cruzadas e têm uma combinação de letras comuns e significados específicos para o contexto do jogo."
             data={DATA} 
-            canonicalLink="https://palavragem.com.br/commomCrossWordsWithB"
+            canonicalLink="https://palavragem.com.br/palavras-que-comecam-com-B"
         />
     )
 }

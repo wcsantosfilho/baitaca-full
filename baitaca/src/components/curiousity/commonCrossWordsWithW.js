@@ -15,7 +15,7 @@ export const CommomCrossWordsWithW = () => {
             title="Aqui estão 5 palavras comuns em palavras cruzadas que começam com a letra W"
             explanation="Palavras comuns em palavras cruzadas que começam com a letra W são relativamente raras. No entanto, aqui estão algumas opções."
             data={DATA} 
-            canonicalLink="https://palavragem.com.br/commomCrossWordsWithW"
+            canonicalLink="https://palavragem.com.br/palavras-que-comecam-com-W"
         />
     )
 }

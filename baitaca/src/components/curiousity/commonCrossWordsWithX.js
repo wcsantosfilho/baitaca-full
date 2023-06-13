@@ -16,7 +16,7 @@ export const CommomCrossWordsWithX = () => {
             title="Aqui estão 6 palavras comuns em palavras cruzadas que começam com a letra X"
             explanation="Palavras comuns em palavras cruzadas que começam com a letra X são bastante limitadas. No entanto, aqui estão algumas opções:"
             data={DATA} 
-            canonicalLink="https://palavragem.com.br/commomCrossWordsWithX"
+            canonicalLink="https://palavragem.com.br/palavras-que-comecam-com-X"
         />
     )
 }

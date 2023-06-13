@@ -18,7 +18,7 @@ export const CommomCrossWordsWithK = () => {
             title="Aqui estão 8 palavras comuns em palavras cruzadas que começam com a letra K"
             explanation="Essas palavras são frequentemente usadas em palavras cruzadas, mas é importante notar que palavras iniciadas com a letra K são menos comuns nesse contexto."
             data={DATA} 
-            canonicalLink="https://palavragem.com.br/commomCrossWordsWithK"
+            canonicalLink="https://palavragem.com.br/palavras-que-comecam-com-K"
         />
     )
 }

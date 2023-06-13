@@ -47,37 +47,37 @@ export const AppHeader = ({appName}) => {
         }
         />
         <Nav align="center" flex={false} direction="row">
-          <Anchor label="" href="/about" />
+          <Anchor label="" href="/sobre" />
           <Anchor label="" href="/" />
-          <Anchor label="" href="/crossWords" />
-          <Anchor label="" href="/biggestWordOfEachLetter" />
-          <Anchor label="" href="/curiousBiologyWords" />
-          <Anchor label="" href="/commomCrossWordsWithA" />
-          <Anchor label="" href="/commomCrossWordsWithB" />
-          <Anchor label="" href="/commomCrossWordsWithC" />
-          <Anchor label="" href="/commomCrossWordsWithD" />
-          <Anchor label="" href="/commomCrossWordsWithE" />
-          <Anchor label="" href="/commomCrossWordsWithF" />
-          <Anchor label="" href="/commomCrossWordsWithG" />
-          <Anchor label="" href="/commomCrossWordsWithH" />
-          <Anchor label="" href="/commomCrossWordsWithI" />
-          <Anchor label="" href="/commomCrossWordsWithJ" />
-          <Anchor label="" href="/commomCrossWordsWithK" />
-          <Anchor label="" href="/commomCrossWordsWithL" />
-          <Anchor label="" href="/commomCrossWordsWithM" />
-          <Anchor label="" href="/commomCrossWordsWithN" />
-          <Anchor label="" href="/commomCrossWordsWithO" />
-          <Anchor label="" href="/commomCrossWordsWithP" />
-          <Anchor label="" href="/commomCrossWordsWithQ" />
-          <Anchor label="" href="/commomCrossWordsWithR" />
-          <Anchor label="" href="/commomCrossWordsWithS" />
-          <Anchor label="" href="/commomCrossWordsWithT" />
-          <Anchor label="" href="/commomCrossWordsWithU" />
-          <Anchor label="" href="/commomCrossWordsWithV" />
-          <Anchor label="" href="/commomCrossWordsWithW" />
-          <Anchor label="" href="/commomCrossWordsWithX" />
-          <Anchor label="" href="/commomCrossWordsWithY" />
-          <Anchor label="" href="/commomCrossWordsWithZ" />
+          <Anchor label="" href="/palavras-cruzadas" />
+          <Anchor label="" href="/maior-palavra-de-cada-letra" />
+          <Anchor label="" href="/palavras-curiosas-da-biologia" />
+          <Anchor label="" href="/palavras-que-comecam-com-a" />
+          <Anchor label="" href="/palavras-que-comecam-com-b" />
+          <Anchor label="" href="/palavras-que-comecam-com-c" />
+          <Anchor label="" href="/palavras-que-comecam-com-d" />
+          <Anchor label="" href="/palavras-que-comecam-com-e" />
+          <Anchor label="" href="/palavras-que-comecam-com-f" />
+          <Anchor label="" href="/palavras-que-comecam-com-g" />
+          <Anchor label="" href="/palavras-que-comecam-com-h" />
+          <Anchor label="" href="/palavras-que-comecam-com-i" />
+          <Anchor label="" href="/palavras-que-comecam-com-j" />
+          <Anchor label="" href="/palavras-que-comecam-com-k" />
+          <Anchor label="" href="/palavras-que-comecam-com-l" />
+          <Anchor label="" href="/palavras-que-comecam-com-m" />
+          <Anchor label="" href="/palavras-que-comecam-com-n" />
+          <Anchor label="" href="/palavras-que-comecam-com-o" />
+          <Anchor label="" href="/palavras-que-comecam-com-p" />
+          <Anchor label="" href="/palavras-que-comecam-com-q" />
+          <Anchor label="" href="/palavras-que-comecam-com-r" />
+          <Anchor label="" href="/palavras-que-comecam-com-s" />
+          <Anchor label="" href="/palavras-que-comecam-com-t" />
+          <Anchor label="" href="/palavras-que-comecam-com-u" />
+          <Anchor label="" href="/palavras-que-comecam-com-v" />
+          <Anchor label="" href="/palavras-que-comecam-com-w" />
+          <Anchor label="" href="/palavras-que-comecam-com-x" />
+          <Anchor label="" href="/palavras-que-comecam-com-y" />
+          <Anchor label="" href="/palavras-que-comecam-com-z" />
         </Nav>
         <Heading size="small" textAlign="start">
           {appName}
